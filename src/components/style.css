@@ -1,0 +1,79 @@
+/* styles.css */
+.icon-box {
+  /* Ensure the background color is white */
+  background-color: whitesmoke !important; /* Force background color to be white */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  position: relative; /* Ensure it's positioned relative for z-index to work */
+  /* Optional: Add a transition for margin to handle spacing if needed */
+}
+
+.icon-box:hover {
+  transform: scale(1); /* Scale up the hovered div */
+  z-index: 10; /* Bring the hovered div to the front */
+  opacity: 1;
+}
+
+.icon-box:not(:hover) {
+  opacity: 0.6; /* Fade out non-hovered divs */
+  transform: scale(0.9); /* Scale down non-hovered divs */
+  z-index: 1; /* Ensure non-hovered divs are behind the hovered one */
+}
+
+/* Optional: To handle the parent div's overflow */
+.parent-div {
+  position: relative; /* Ensures the child divs are positioned relative to this parent */
+  overflow: hidden; /* Hide any overflow caused by scaling */
+}
+
+
+
+/* //css styling for first div */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.image-item {
+  flex: 1;
+  height: 200px; /* Adjust height based on your requirements */
+  background-size: cover;
+  background-position: center;
+  margin: 0 20px; /* Space between images */
+ 
+}
+
+.nav-button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.nav-button:disabled {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+}
