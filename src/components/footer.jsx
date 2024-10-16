@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
-import React from 'react';
-import { FaWhatsapp, FaInstagram } from 'react-icons/fa'; // Import Font Awesome icons
+import React from "react";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa"; // Import Font Awesome icons
 
 const Footer = () => {
   return (
@@ -26,21 +26,23 @@ const Footer = () => {
         </a>
       </div>
       <div className="text-center mt-2">
-        <p style={{ fontFamily: 'Merriweather, serif' }}>Contact us directly through our social media channels:</p>
-        <p style={{ fontFamily: 'Merriweather, serif' }}>
-          <a 
-            href="https://wa.me/9717879668" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+        <p style={{ fontFamily: "Merriweather, serif" }}>
+          Contact us directly through our social media channels:
+        </p>
+        <p style={{ fontFamily: "Merriweather, serif" }}>
+          <a
+            href="https://wa.me/9717879668"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white"
           >
             WhatsApp
-          </a> 
-          {' '}or{' '}
-          <a 
-            href="https://www.instagram.com/int.eriordeco" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          </a>{" "}
+          or{" "}
+          <a
+            href="https://www.instagram.com/int.eriordeco"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white "
           >
             Instagram
@@ -52,4 +54,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

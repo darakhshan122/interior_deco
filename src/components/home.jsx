@@ -1,9 +1,9 @@
 // src/components/Home.jsx
-import React from 'react';
-import MainImage from './mainImage';
-import FirstDiv from './image';
-import SecondDiv from './seconddiv';
-import ThirdDiv from './thirddiv';
+import React from "react";
+import MainImage from "./mainImage";
+import FirstDiv from "./image";
+import SecondDiv from "./seconddiv";
+import ThirdDiv from "./thirddiv";
 
 const Home = () => {
   return (
@@ -11,14 +11,12 @@ const Home = () => {
       {/* Main Image Component */}
       <MainImage />
 
-       
-      
       {/* Second Div Component */}
       <SecondDiv />
 
       {/* First Div Component */}
       <FirstDiv />
-      
+
       {/* Third Div Component */}
       <ThirdDiv />
     </div>
